@@ -816,9 +816,9 @@ MonoBehaviour:
   - {fileID: 945367397}
   - {fileID: 242982549}
   - {fileID: 562572578}
-  StartTimeBetweenSpawn: 2
-  decreaseTime: 0.025
-  minTime: 0.65
+  StartTimeBetweenSpawn: 3
+  decreaseTime: 0.01
+  minTime: 0.7
 --- !u!4 &1287880740
 Transform:
   m_ObjectHideFlags: 0
@@ -870,7 +870,7 @@ MonoBehaviour:
   - {fileID: 287053434}
   StartTimeBetweenSpawn: 1
   decreaseTime: 0.05
-  minTime: 0.65
+  minTime: 0.5
 --- !u!4 &1294599582
 Transform:
   m_ObjectHideFlags: 0
@@ -1549,11 +1549,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8013992004815780545, guid: c4f7022f0db612e49ad1d33314555655, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.15
+      value: -18.02
       objectReference: {fileID: 0}
     - target: {fileID: 8013992004815780545, guid: c4f7022f0db612e49ad1d33314555655, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: 2.05
       objectReference: {fileID: 0}
     - target: {fileID: 8013992004815780545, guid: c4f7022f0db612e49ad1d33314555655, type: 3}
       propertyPath: m_LocalPosition.z
