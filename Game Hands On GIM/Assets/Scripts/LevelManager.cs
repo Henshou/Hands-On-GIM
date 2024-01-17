@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     }
     public void GameScene()
     {
+        SceneManager.UnloadSceneAsync ("Menu");
         SceneManager.LoadScene(sceneName1);
     }
     public void ExitGame()
