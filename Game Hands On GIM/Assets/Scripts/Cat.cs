@@ -14,12 +14,15 @@ public class Cat : MonoBehaviour
     public Text healthDisplay;
     public GameObject gameOver;
 
+    public Animator animator;
+
 
     private void Update()
     {
 
-        if (health <= 0) {
-           gameOver.SetActive(true);
+        if (health <= 0)
+        {
+            gameOver.SetActive(true);
             Destroy(gameObject);
         }
         healthDisplay.text = "health : " + health.ToString();
@@ -34,5 +37,18 @@ public class Cat : MonoBehaviour
         {
             targetPos = new Vector2(transform.position.x, Mathf.Clamp(transform.position.y - Yincrement, minHeight, maxHeight));
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Obstacle"))
+        {
+            animator.SetBool("IsHit",true);
+        }
+    }
+    
+    private void Stop()
+    {
+        animator.SetBool("IsHit",false);
     }
 }
